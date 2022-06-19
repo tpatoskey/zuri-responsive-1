@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    font-weight: 400, 500, 600, 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg-intro-desktop.png);
+    width: 100%;
+}
+
+.main_bg{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8rem;
+    place-content: center;
+    justify-content: center;
+    padding-left: 4rem;
+}
+.main_bg .text_info{
+    /* width: 20rem;
+    height: 20rem; */
+    color: white;
+    margin-top: 20rem;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.main_bg .text_info h1{
+    font-size: 3.5rem;
+
+}
+
+.entry_form .trial{
+    width: 30rem;
+    height: 3rem;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 10rem;
+    font-size: .7rem;
+    box-shadow: 0px 4px rgb(214, 177, 177);
+}
+.entry_form .form_layout{
+    width: 30rem;
+    height: 25rem;
+    background-color: white;
+    border-radius: .8rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px rgb(214, 177, 177);
+
+}
+
+.entry_form .form_layout input{
+    width: 28rem;
+    height: 3rem;
+    border-radius: 3px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+.entry_form .form_layout button{
+    width: 28rem;
+    height: 3rem;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border-radius: 3px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-size: .6rem;
+    cursor: pointer;
+
+}
+.entry_form .form_layout p{
+    font-size: .6rem;
+    color: rgb(170, 168, 168);
+    margin-top: 4px;
+    margin-left: 12px;
+}
+
+.entry_form .form_layout span{
+    color: hsl(0, 100%, 74%);
+}
+@media screen and (max-width: 375px) {
+    body{
+        background-image: url(bg-intro-mobile.png);
+        display: flex;
+        flex-direction: row;
+
+    }
+    .main_bg{
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        margin-right: 4rem;
+    }
+    .main_bg .text_info{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 17rem;
+    }
+    .main_bg .text_info h1{
+        font-size: 1.5rem;
+    }
+    .main_bg .text_info p{
+        margin: 2rem;
+        font-size: .7rem;
+    }
+    .entry_form .trial{
+        margin-top: 3rem;
+        width: 18rem;
+        height: 4rem;
+        font-size: .7rem;
+    }
+    .entry_form .form_layout{
+        padding: 2rem;
+        width: 18rem;
+        height: 20rem;
+        
+    }
+    .entry_form .form_layout input{
+        width: 17rem;
+        height: 2.5rem;
+    }
+    .entry_form .form_layout button{
+        width: 17rem;
+        height: 2rem;
+        font-size: .7rem;
+    }
+    .entry_form .form_layout p{
+        font-size: .6rem;
+    }
+}
